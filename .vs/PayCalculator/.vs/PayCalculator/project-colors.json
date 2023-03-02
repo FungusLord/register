@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d309b0c5-99c1-4e51-895b-fb651f1d1b4c": {
+      "ProjectGuid": "d309b0c5-99c1-4e51-895b-fb651f1d1b4c",
+      "DisplayName": "PayCalculator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

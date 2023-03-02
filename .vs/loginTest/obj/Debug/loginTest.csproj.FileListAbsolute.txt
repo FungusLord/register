@@ -1,0 +1,11 @@
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\bin\Debug\loginTest.exe.config
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\bin\Debug\loginTest.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\bin\Debug\loginTest.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.csproj.AssemblyReference.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.Properties.Resources.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.csproj.GenerateResource.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.csproj.CoreCompileInputs.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\loginTest\obj\Debug\loginTest.loginMenu.resources

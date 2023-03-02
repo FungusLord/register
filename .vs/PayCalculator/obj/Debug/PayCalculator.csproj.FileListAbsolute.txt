@@ -1,0 +1,11 @@
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.csproj.AssemblyReference.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.main.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.Properties.Resources.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.csproj.GenerateResource.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.csproj.CoreCompileInputs.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\bin\Debug\PayCalculator.exe.config
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\bin\Debug\PayCalculator.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\bin\Debug\PayCalculator.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\PayCalculator\obj\Debug\PayCalculator.pdb

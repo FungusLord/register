@@ -1,0 +1,11 @@
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\bin\Debug\shop.exe.config
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\bin\Debug\shop.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\bin\Debug\shop.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.csproj.AssemblyReference.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.csproj.SuggestedBindingRedirects.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.Properties.Resources.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.csproj.GenerateResource.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.csproj.CoreCompileInputs.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\shop\obj\Debug\shop.ItemShop.resources
