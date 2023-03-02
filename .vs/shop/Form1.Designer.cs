@@ -188,9 +188,9 @@
             this.preTaxLabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preTaxLabel.Location = new System.Drawing.Point(8, 382);
             this.preTaxLabel.Name = "preTaxLabel";
-            this.preTaxLabel.Size = new System.Drawing.Size(91, 19);
+            this.preTaxLabel.Size = new System.Drawing.Size(82, 19);
             this.preTaxLabel.TabIndex = 12;
-            this.preTaxLabel.Text = "Pre Tax: $";
+            this.preTaxLabel.Text = "Pre Tax: ";
             this.preTaxLabel.Click += new System.EventHandler(this.preTaxLabel_Click);
             // 
             // postTaxLabel
