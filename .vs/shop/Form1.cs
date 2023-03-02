@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace shop
 {
@@ -42,8 +43,8 @@ namespace shop
             try
             {
                 //Reset labels
-                preTaxLabel.Text = "Pre Tax: $";
-                postTaxLabel.Text = "After Tax: $";
+                preTaxLabel.Text = "Pre Tax:";
+                postTaxLabel.Text = "After Tax:";
                 //Define # of items
                 crates = Convert.ToDouble(crateIn.Text);
                 hats = Convert.ToDouble(hatIn.Text);
@@ -53,9 +54,9 @@ namespace shop
                 preTax = crates * cratePrice + hats * hatPrice + keys * keyPrice;
                 postTax = preTax + preTax * taxRate;
                 //Output totals
-                preTaxLabel.Text = preTaxLabel.Text + preTax;
+                preTaxLabel.Text = preTaxLabel.Text + preTax.ToString("C");
                 postTaxLabel.Text += postTax;
-                //Enable pay button
+                //Enable pay button //
                 payButton.Enabled = true;
             }
             catch
@@ -89,7 +90,7 @@ namespace shop
                 //Define amount paid
                 pay = Convert.ToDouble(payIn.Text);
                 //Check if full amount is paid
-                if(pay >= postTax)
+                if (pay >= postTax)
                 {
                     //Give change
                     //Output amount paid
@@ -143,21 +144,28 @@ namespace shop
         private void printButton_Click(object sender, EventArgs e)
         {
             receipt.Visible = true;
-            receipt.Text = $@"MANN. CO ITEM SHOP
 
-CRATE X {crateIn.Text} - ${crates * cratePrice}
-HAT X {hatIn.Text} - ${hats * hatPrice}
-KEY X {keyIn.Text} - ${keys * keyPrice}
+            receipt.Text = $@"MANN. CO ITEM SHOP";
+            Refresh();
+            Thread.Sleep(400);
 
-PRE TAX: ${preTax}
-TAX: {taxRate}%
-AFTER TAX: ${postTax}
+            receipt.Text += $"\nCRATE X {crates} - ${crates * cratePrice}";
+            Refresh();
+            Thread.Sleep(400);
 
-PAID: ${pay}
-CHANGE: ${change}
+            //CRATE X {crateIn.Text} - ${crates * cratePrice}
+            //HAT X {hatIn.Text} - ${hats * hatPrice}
+            //KEY X {keyIn.Text} - ${keys * keyPrice}
 
-MANN.CO THANKS YOU!
-:)";
+            //PRE TAX: ${preTax}
+            //TAX: {taxRate}%
+            //AFTER TAX: ${postTax}
+
+            //PAID: ${pay}
+            //CHANGE: ${change}
+
+            //MANN.CO THANKS YOU!
+            //:)";
         }
     }
 }
