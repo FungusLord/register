@@ -51,6 +51,10 @@
             this.printButton = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
             this.receipt = new System.Windows.Forms.Label();
+            this.changeOut = new System.Windows.Forms.Label();
+            this.postTaxOut = new System.Windows.Forms.Label();
+            this.payOut = new System.Windows.Forms.Label();
+            this.preTaxOut = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crateImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -188,9 +192,9 @@
             this.preTaxLabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preTaxLabel.Location = new System.Drawing.Point(8, 382);
             this.preTaxLabel.Name = "preTaxLabel";
-            this.preTaxLabel.Size = new System.Drawing.Size(82, 19);
+            this.preTaxLabel.Size = new System.Drawing.Size(78, 19);
             this.preTaxLabel.TabIndex = 12;
-            this.preTaxLabel.Text = "Pre Tax: ";
+            this.preTaxLabel.Text = "Pre Tax:";
             this.preTaxLabel.Click += new System.EventHandler(this.preTaxLabel_Click);
             // 
             // postTaxLabel
@@ -199,9 +203,9 @@
             this.postTaxLabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postTaxLabel.Location = new System.Drawing.Point(8, 420);
             this.postTaxLabel.Name = "postTaxLabel";
-            this.postTaxLabel.Size = new System.Drawing.Size(110, 19);
+            this.postTaxLabel.Size = new System.Drawing.Size(97, 19);
             this.postTaxLabel.TabIndex = 13;
-            this.postTaxLabel.Text = "After Tax: $";
+            this.postTaxLabel.Text = "After Tax:";
             // 
             // payIn
             // 
@@ -217,9 +221,9 @@
             this.payInLabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.payInLabel.Location = new System.Drawing.Point(8, 439);
             this.payInLabel.Name = "payInLabel";
-            this.payInLabel.Size = new System.Drawing.Size(132, 19);
+            this.payInLabel.Size = new System.Drawing.Size(119, 19);
             this.payInLabel.TabIndex = 15;
-            this.payInLabel.Text = "Amount Paid: $";
+            this.payInLabel.Text = "Amount Paid:";
             this.payInLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // changeLabel
@@ -228,9 +232,9 @@
             this.changeLabel.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeLabel.Location = new System.Drawing.Point(8, 496);
             this.changeLabel.Name = "changeLabel";
-            this.changeLabel.Size = new System.Drawing.Size(88, 19);
+            this.changeLabel.Size = new System.Drawing.Size(75, 19);
             this.changeLabel.TabIndex = 16;
-            this.changeLabel.Text = "Change: $";
+            this.changeLabel.Text = "Change:";
             // 
             // payButton
             // 
@@ -274,12 +278,53 @@
             this.receipt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.receipt.Visible = false;
             // 
+            // changeOut
+            // 
+            this.changeOut.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeOut.Location = new System.Drawing.Point(124, 496);
+            this.changeOut.Name = "changeOut";
+            this.changeOut.Size = new System.Drawing.Size(78, 19);
+            this.changeOut.TabIndex = 21;
+            this.changeOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // postTaxOut
+            // 
+            this.postTaxOut.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postTaxOut.Location = new System.Drawing.Point(124, 420);
+            this.postTaxOut.Name = "postTaxOut";
+            this.postTaxOut.Size = new System.Drawing.Size(78, 19);
+            this.postTaxOut.TabIndex = 22;
+            this.postTaxOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // payOut
+            // 
+            this.payOut.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payOut.Location = new System.Drawing.Point(124, 439);
+            this.payOut.Name = "payOut";
+            this.payOut.Size = new System.Drawing.Size(78, 19);
+            this.payOut.TabIndex = 23;
+            this.payOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // preTaxOut
+            // 
+            this.preTaxOut.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preTaxOut.Location = new System.Drawing.Point(136, 382);
+            this.preTaxOut.Name = "preTaxOut";
+            this.preTaxOut.Size = new System.Drawing.Size(66, 19);
+            this.preTaxOut.TabIndex = 24;
+            this.preTaxOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.preTaxOut.Click += new System.EventHandler(this.preTaxOut_Click);
+            // 
             // ItemShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(484, 561);
+            this.Controls.Add(this.preTaxOut);
+            this.Controls.Add(this.payOut);
+            this.Controls.Add(this.postTaxOut);
+            this.Controls.Add(this.changeOut);
             this.Controls.Add(this.receipt);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.printButton);
@@ -339,6 +384,10 @@
         private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Label receipt;
+        private System.Windows.Forms.Label changeOut;
+        private System.Windows.Forms.Label postTaxOut;
+        private System.Windows.Forms.Label payOut;
+        private System.Windows.Forms.Label preTaxOut;
     }
 }
 

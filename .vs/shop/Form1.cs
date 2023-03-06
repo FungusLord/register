@@ -22,6 +22,7 @@ namespace shop
         double hats;
         double keys;
         double change;
+        int sleepTime = 350;
         //Prices
         const double cratePrice = 3.00;
         const double hatPrice = 1.50;
@@ -43,8 +44,8 @@ namespace shop
             try
             {
                 //Reset labels
-                preTaxLabel.Text = "Pre Tax:";
-                postTaxLabel.Text = "After Tax:";
+                preTaxOut.Text = "";
+                postTaxOut.Text = "";
                 //Define # of items
                 crates = Convert.ToDouble(crateIn.Text);
                 hats = Convert.ToDouble(hatIn.Text);
@@ -54,9 +55,9 @@ namespace shop
                 preTax = crates * cratePrice + hats * hatPrice + keys * keyPrice;
                 postTax = preTax + preTax * taxRate;
                 //Output totals
-                preTaxLabel.Text = preTaxLabel.Text + preTax.ToString("C");
-                postTaxLabel.Text += postTax;
-                //Enable pay button //
+                preTaxOut.Text = preTax.ToString("C");
+                postTaxOut.Text = postTax.ToString("C");
+                //Enable pay button
                 payButton.Enabled = true;
             }
             catch
@@ -66,7 +67,7 @@ namespace shop
                 hatIn.Text = "";
                 keyIn.Text = "";
                 //Output error
-                preTaxLabel.Text = preTaxLabel.Text + " INPUT ERROR :(";
+                preTaxOut.Text = "ERROR";
             }
         }
 
@@ -85,8 +86,8 @@ namespace shop
             try
             {
                 //Reset Labels
-                payInLabel.Text = "Amount Paid: $";
-                changeLabel.Text = "Change: $";
+                payOut.Text = "";
+                changeOut.Text = "";
                 //Define amount paid
                 pay = Convert.ToDouble(payIn.Text);
                 //Check if full amount is paid
@@ -94,11 +95,11 @@ namespace shop
                 {
                     //Give change
                     //Output amount paid
-                    payInLabel.Text = payInLabel.Text + pay;
+                    payOut.Text = pay.ToString("C");
                     //Calculate change
                     change = pay - postTax;
                     //Output change
-                    changeLabel.Text = changeLabel.Text + change;
+                    changeOut.Text = change.ToString("C");
                     //Enable print button
                     printButton.Enabled = true;
 
@@ -109,7 +110,7 @@ namespace shop
                     //Reset Input
                     payIn.Text = "";
                     //Output error
-                    payInLabel.Text = payInLabel.Text + " Pay More!";
+                    payOut.Text = "Pay More!";
                 }
             }
             catch
@@ -117,7 +118,7 @@ namespace shop
                 //Reset Input
                 payIn.Text = "";
                 //Output error
-                payInLabel.Text = payInLabel.Text + " INPUT ERROR :(";
+                payOut.Text = "ERROR";
             }
         }
 
@@ -128,11 +129,11 @@ namespace shop
             hatIn.Text = "";
             keyIn.Text = "";
             payIn.Text = "";
-            //Reset labels
-            preTaxLabel.Text = "Pre Tax: $";
-            postTaxLabel.Text = "After Tax: $";
-            payInLabel.Text = "Amount Paid: $";
-            changeLabel.Text = "Change: $";
+            //Reset Output
+            preTaxOut.Text = "";
+            postTaxOut.Text = "";
+            payOut.Text = "";
+            changeOut.Text = "";
             //Reset Receipt
             receipt.Text = "";
             receipt.Visible = false;
@@ -145,27 +146,70 @@ namespace shop
         {
             receipt.Visible = true;
 
-            receipt.Text = $@"MANN. CO ITEM SHOP";
+            receipt.Text = $"MANN. CO ITEM SHOP";
             Refresh();
-            Thread.Sleep(400);
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\n";
+            Refresh();
+            Thread.Sleep(sleepTime);
 
             receipt.Text += $"\nCRATE X {crates} - ${crates * cratePrice}";
             Refresh();
-            Thread.Sleep(400);
+            Thread.Sleep(sleepTime);
 
-            //CRATE X {crateIn.Text} - ${crates * cratePrice}
-            //HAT X {hatIn.Text} - ${hats * hatPrice}
-            //KEY X {keyIn.Text} - ${keys * keyPrice}
+            receipt.Text += $"\nHAT X {hats} - ${hats * hatPrice}";
+            Refresh();
+            Thread.Sleep(sleepTime);
 
-            //PRE TAX: ${preTax}
-            //TAX: {taxRate}%
-            //AFTER TAX: ${postTax}
+            receipt.Text += $"\nKEY X {keys} - ${keys * keyPrice}";
+            Refresh();
+            Thread.Sleep(sleepTime);
 
-            //PAID: ${pay}
-            //CHANGE: ${change}
+            receipt.Text += $"\n";
+            Refresh();
+            Thread.Sleep(sleepTime);
 
-            //MANN.CO THANKS YOU!
-            //:)";
+            receipt.Text += $"\nPRE TAX - {preTaxOut.Text}";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nTAX RATE - 13%";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nPOST TAX - {postTaxOut.Text}";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nPAID - {payOut.Text}";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nCHANGE - {changeOut.Text}";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\n";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nMANN. CO THANKS";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\nYOU!";
+            Refresh();
+            Thread.Sleep(sleepTime);
+
+            receipt.Text += $"\n:)";
+            Refresh();
+            Thread.Sleep(sleepTime);
+        }
+
+        private void preTaxOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
