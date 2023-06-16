@@ -1,0 +1,11 @@
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.csproj.AssemblyReference.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.csproj.SuggestedBindingRedirects.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.Properties.Resources.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.csproj.GenerateResource.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.csproj.CoreCompileInputs.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\bin\Debug\SquareChaser.exe.config
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\bin\Debug\SquareChaser.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\bin\Debug\SquareChaser.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\SquareChaser\obj\Debug\SquareChaser.squareChaser.resources

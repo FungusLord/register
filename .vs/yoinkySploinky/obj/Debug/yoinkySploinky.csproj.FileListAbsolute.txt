@@ -1,0 +1,11 @@
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\bin\Debug\yoinkySploinky.exe.config
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\bin\Debug\yoinkySploinky.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\bin\Debug\yoinkySploinky.pdb
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.csproj.AssemblyReference.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.csproj.SuggestedBindingRedirects.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.game.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.Properties.Resources.resources
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.csproj.GenerateResource.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.csproj.CoreCompileInputs.cache
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.exe
+C:\Users\liamcart204\source\repos\ICS3U\.vs\yoinkySploinky\obj\Debug\yoinkySploinky.pdb
